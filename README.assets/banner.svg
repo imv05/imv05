@@ -1,0 +1,58 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#070A13"/>
+      <stop offset="0.45" stop-color="#10172A"/>
+      <stop offset="1" stop-color="#2A0F1F"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="160" y1="260" x2="1040" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00D1FF"/>
+      <stop offset="0.5" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#F43F5E"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#FFFFFF" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="28" fill="url(#grid)"/>
+
+  <circle cx="1040" cy="82" r="150" fill="#F43F5E" opacity="0.16"/>
+  <circle cx="180" cy="298" r="180" fill="#00D1FF" opacity="0.12"/>
+  <circle cx="650" cy="180" r="220" fill="#8B5CF6" opacity="0.10"/>
+
+  <path d="M110 246C187 145 260 145 330 219C399 293 466 283 531 201C598 117 671 98 743 169C818 243 882 263 956 167C1002 107 1048 84 1092 96"
+        stroke="url(#accent)" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+  <path d="M110 246C187 145 260 145 330 219C399 293 466 283 531 201C598 117 671 98 743 169C818 243 882 263 956 167C1002 107 1048 84 1092 96"
+        stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1.4" stroke-linecap="round"/>
+
+  <g opacity="0.9" filter="url(#glow)">
+    <circle cx="330" cy="219" r="7" fill="#00D1FF"/>
+    <circle cx="531" cy="201" r="7" fill="#8B5CF6"/>
+    <circle cx="743" cy="169" r="7" fill="#F43F5E"/>
+    <circle cx="956" cy="167" r="7" fill="#00D1FF"/>
+  </g>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="88" y="100" fill="#E5E7EB" font-size="26" letter-spacing="7" opacity="0.86">PKU UNDERGRAD · NEURAL AI · BACKEND SYSTEMS</text>
+    <text x="86" y="178" fill="#FFFFFF" font-size="66" font-weight="800">Yuxiang Xie</text>
+    <text x="90" y="226" fill="#CBD5E1" font-size="27">Building reproducible ML pipelines and robust AI applications</text>
+  </g>
+
+  <g font-family="JetBrains Mono, Consolas, monospace" font-size="20" opacity="0.82">
+    <text x="770" y="270" fill="#38BDF8">ECoG</text>
+    <text x="850" y="270" fill="#A78BFA">PyTorch</text>
+    <text x="970" y="270" fill="#FB7185">SLURM</text>
+    <text x="770" y="304" fill="#FBBF24">RAG</text>
+    <text x="835" y="304" fill="#34D399">C++</text>
+    <text x="895" y="304" fill="#F472B6">Systems</text>
+  </g>
+</svg>
